@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-   <style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
     body {
       margin: 0;
       padding: 0;
@@ -13,7 +13,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      height: 100vh;
+      min-height: 100vh;
       color: white;
       font-family: Arial, sans-serif;
     }
@@ -23,51 +23,77 @@
       padding-top: 20%;
       text-shadow: 2px 2px 8px black;
     }
-   </style> 
+
+    nav {
+      text-align: center;
+      margin: 20px;
+    }
+
+    img {
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+
+    .link-title {
+      margin-top: 10px;
+      font-size: 18px;
+      text-decoration: underline;
+    }
+  </style>
 </head>
-    <body>
-    <header>
-             <h1 style="text-align:center;"><u>Portfolio</u></h1>
-        
-             <section>
-<i><h3><ul>
-    <li>My name is Mohammad Hamza Anwer.</li>
-    <br><li> I am 13 years old.</li>
-    <br><li> I study in class 8 .</li>
-    <br><li>The name of my school is Dr. APJ Abdul Kalam Public School.</li>
-    <br><li> I want to master HTML Language.</li>
-</ul></h3></i>
-            </section>
+<body>
 
-</header>
+  <header>
+    <h1><u>Portfolio</u></h1>
+    <section>
+      <i>
+        <h3>
+          <ul>
+            <li>My name is Mohammad Hamza Anwer.</li>
+            <li>I am 13 years old.</li>
+            <li>I study in class 8.</li>
+            <li>The name of my school is Dr. APJ Abdul Kalam Public School.</li>
+            <li>I want to master HTML Language.</li>
+          </ul>
+        </h3>
+      </i>
+    </section>
+  </header>
 
-<hr>
-<section>
+  <hr>
 
-    <big><h3>If you want to check other things Links is in below!</h3></big>
-<main>
+  <section>
+    <h3 style="text-align: center;">If you want to check other things, links are below!</h3>
+    <main>
+      <nav>
+        <a href="Education.html" target="_blank">
+          <img src="https://img.freepik.com/free-photo/education-concept-books_23-2147691011.jpg" height="150px" width="250px" alt="Education">
+        </a>
+        <div class="link-title"><strong>Education</strong></div>
+      </nav>
 
- <h3>
-    <nav>
-     <a href="http://127.0.0.1:5500/HTML/Education.HTML" target="_main"><img src="https://thumbs.dreamstime.com/b/conceptual-education-background-copy-space-word-education-written-black-chalkboard-frame-different-things-108727618.jpg"height=150px width="250px" alt=""></a><br><pre><h3><strong>        <u>Education</strong></h3></pre></u></h3>  
-    </nav>
-    
- <h3>
-    <nav>
-    <a href="http://127.0.0.1:5500/HTML/Experience.HTML"target="_main"><img src="https://telfer.uottawa.ca/assets/images/2018/Career-Centre/Blog/_cache/1920x960/Blog-_25.jpg"height=150px width="250px" alt=""></a><br><pre><h3><strong>        <u>Experience</strong></h3></pre></u></h3>
-    </nav>
+      <nav>
+        <a href="Experience.html" target="_blank">
+          <img src="https://telfer.uottawa.ca/assets/images/2018/Career-Centre/Blog/_cache/1920x960/Blog-_25.jpg" height="150px" width="250px" alt="Experience">
+        </a>
+        <div class="link-title"><strong>Experience</strong></div>
+      </nav>
 
- <h3>
-    <a href="http://127.0.0.1:5500/HTML/Projects.HTML"target="_main"><img src="https://www.gethow.org/wp-content/uploads/2019/09/project.jpg"height=150px width="250px" alt=""></a><br><pre><h3><strong>        <u>Projects</strong></h3></pre></u></h3>
-    </nav>
+      <nav>
+        <a href="Projects.html" target="_blank">
+          <img src="https://www.gethow.org/wp-content/uploads/2019/09/project.jpg" height="150px" width="250px" alt="Projects">
+        </a>
+        <div class="link-title"><strong>Projects</strong></div>
+      </nav>
 
-    <nav>
-        <a href="http://127.0.0.1:5500/HTML/Forms.HTML" target="_main"><img src="https://www.windowsnoticias.com/wp-content/uploads/2024/01/ms-forms.webp"height=150px width="250px" alt=""></a><br><pre><h3><strong>        <u>Signup Form</strong></h3></pre></u></h3>  
-       </nav>
-    
-</main>
+      <nav>
+        <a href="Forms.html" target="_blank">
+          <img src="https://www.windowsnoticias.com/wp-content/uploads/2024/01/ms-forms.webp" height="150px" width="250px" alt="Signup Form">
+        </a>
+        <div class="link-title"><strong>Signup Form</strong></div>
+      </nav>
+    </main>
+  </section>
 
-
-</section>
-</body>   
+</body>
 </html>
