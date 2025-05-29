@@ -1,3 +1,3 @@
-This is my first Repository
+My first GitHub Repository
 <br>
 Author - Hamza Anwer
