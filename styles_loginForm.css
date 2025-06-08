@@ -13,7 +13,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background: url("https://i.etsystatic.com/18836924/r/il/bf1796/4522244578/il_fullxfull.4522244578_8n3r.jpg")
-    no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
