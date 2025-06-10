@@ -43,24 +43,35 @@
         text-decoration: underline;
       }
       button {
-        text-align: center;     
-      background: linear-gradient(90deg, #d39f3e, #8d7f9c, #7e4d2b, #7a6c8b);
- color: purple;
-        padding: 15px 30px;
-        border: none;
-        font-size: 18px;
-        align-items: center;
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-        cursor: pointer;
-        display: block;
-        margin: 0 auto;      
-      }
-/*button {
-  display: block;
-  margin: 0 auto;      
-}*/
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #60efff);
+  background-size: 600% 600%;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: animateButton 8s ease infinite;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+display: block;
+        margin: 0 auto;    
+}
+
+@keyframes animateButton {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+
+        
 
 
 @media (max-width: 768px) {
