@@ -32,10 +32,25 @@
         margin: 20px;
       }
 
-      img {
-        border: 2px solid white;
-        border-radius: 10px;
-      }
+img {
+  border: 4px solid transparent;
+  border-radius: 12px;
+  padding: 4px;
+  background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet, red);
+  background-size: 400% 400%;
+  animation: rgbBorder 6s linear infinite;
+  transition: transform 0.4s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes rgbBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
       .link-title {
         margin-top: 10px;
