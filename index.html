@@ -44,7 +44,7 @@
       }
       button {
         text-align: center;
-        background: linear-gradient(to right, #ff512f, #dd2476);
+        background: linear-gradient(to right, #ff512f, #dd2476, #bb3866, #db935c);
         color: cyan;
         padding: 15px 30px;
         border: none;
@@ -71,30 +71,44 @@
 
 @media (min-width: 769px) {
   button {
-    width: 50%;
+    width: 30%;
   }
           }
+
+.outer {
+display: flex;
+justify-content: center;
+align-items: center; 
+height: 100vh; 
+
+}
+
+.inner {
+text-align: left;
+
+}
       
     </style>
   </head>
   <body>
     <header>
       <h1><u>Portfolio</u></h1>
-      <section>
-        <i>
-          <h3>
+
+         <div class="outer">
+            <div class="inner">
+<p>
             My name is Mohammad Hamza Anwer. <br />
             I'm a 13-year-old tech enthusiast learning C++, Game dev, and Web
             Dev. <br />
             Every day, I take one step closer to building my dream. <br />
             Turning Curiosity Into Code.
+</p>
 
             <p style="font-weight: bold"; color: #767B91;>
               From HTML to Unreal Engine– My Journey Has Just Begun.
             </p>
-          </h3>
-        </i>
-      </section>
+</div>
+</div>
     </header>
 
     <hr />
