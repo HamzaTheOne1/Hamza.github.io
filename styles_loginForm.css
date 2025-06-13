@@ -18,10 +18,11 @@ body {
   background-position: center;
 }
 
-@media (max-width: 600px)
-* {
-border: none;
-backdrop-filter: none;
+@media (max-width: 600px) {
+  .header {
+        border: none;
+        backdrop-filter: none;
+    }
 }
 
 .header {
