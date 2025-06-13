@@ -18,6 +18,10 @@ body {
   background-position: center;
 }
 
+@media (max-width: 600px) {
+border: none
+}
+
 .header {
   width: 420px;
   background-color: transparent);
