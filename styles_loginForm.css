@@ -27,11 +27,11 @@ body {
 
 .header {
   width: 420px;
-  background-color: transparent);
+  background-color: transparent;
   color: #fff;
   border-radius: 10px;
   padding: 30px 40px;
-  border:2px solid rgba(255,255,255,.3);
+  border:2px solid rgba(255,255,255,.2);
   backdrop-filter: blur(20px);
   box-shadow:0 0 10px rgba(0,0,0,.2);
 
@@ -55,7 +55,7 @@ body {
   background: transparent;
   border: none;
   outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   font-size: 16px;
   color: #fff;
