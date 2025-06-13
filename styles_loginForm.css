@@ -20,9 +20,9 @@ body {
 
 @media (max-width: 600px) {
   .header {
-        border: none;
-        backdrop-filter: none;
-    }
+    border: none;
+    backdrop-filter: none;
+  }
 }
 
 .header {
