@@ -5,269 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <style>
-
-//.    MEDIA QUERIES  
-
-//For Mobile 
-
-h1 {
-  font-size: 28px;
-}
-
-p {
-  font-size: 16px;
-}
-
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 30px;
-    }
-
-    p {
-      font-size: 17px;
-    }
-  }
-
-//For Tablet
-@media (min-width: 601px) and (max-width: 1023px) {
-    h1 {
-      font-size: 36px;
-    }
-
-    p {
-      font-size: 19px;
-    }
-  }
-
-//For Laptop 
-@media (min-width: 1024px) and (max-width: 1439px) {
-    h1 {
-      font-size: 42px;
-    }
-
-    p {
-      font-size: 21px;
-    }
-  }
-
-//For Desktop 
-@media (min-width: 1440px) {
-    h1 {
-      font-size: 46px;
-    }
-
-    p {
-      font-size: 22px;
-    }
-  }
-
-
-//For button 
-@media (max-width: 768px) {
-  button {
-    width: 40%;
-  }
-}
-
-@media (min-width: 769px) {
-  button {
-    width: 15%;
-  }
-          }
-
-
-
-
-
-      body {
-        margin: 0;
-        padding: 0;
-        background-image: url("img_bigMoon.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-        font-family: Arial, sans-serif;
-      }
-
-      header {
-        text-align: center;
-      }
-
-      h1 {
-        text-align: center;
-        padding-top: 4%;
-        text-shadow: 2px 2px 8px black;
-        font-size: 40px;
-        color: #ffffff; 
-        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-text-decoration: underline;
-      }
-
-      nav {
-        text-align: center;
-        margin: 20px;
-      }
-
-      img {
-        border: 1.5px solid white;
-        border-radius: 12px;
-        padding: 4px;
-        transition: transform 0.4s 
-      }
-      img:hover {
-        transform: scale(1.08)
-      }
-      @keyframes rgbBorder {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-      }
-
-      .link-title {
-        margin-top: 10px;
-        font-size: 18px;
-        text-decoration: underline;
-      }
-
-      button {
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #60efff);
-  background-size: 600% 600%;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  animation: animateButton 8s ease infinite;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-display: block;
-        margin: 0 auto;    
-}
-@keyframes animateButton {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-.button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
-}
-
-.outer {
-display: flex;
-justify-content: center;
-margin: 15px;
-align-items: center; 
-
-}
-
-.inner {
-text-align: left;
-}
-
-.linear {
-margin: 15px;
-text-align: center;
-font-weight: bold;
-background: linear-gradient(135deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-     
-    </style>
   </head>
-
   <body>
     <header>
-      <h1>Portfolio</h1>
+      <h1>
+        Portfolio
+      </h1>
 
-<section>
-
-<div class="outer">
-<div class="inner">
-<p>
-            My name is Mohammad Hamza Anwer. <br />
+ <section>
+    <div class="outer">
+       <div class="inner">
+           <p>
+             My name is Mohammad Hamza Anwer.           <br />
             I'm a 13-year-old tech enthusiast learning C++, Game dev, and Web
-            Dev. <br />
-            Every day, I take one step closer to building my dream. <br />
-            Turning Curiosity Into Code.
-</p>
-</div>
-</div>
-            <p class="linear">
-              From HTML to Unreal Engine– My Journey Has Just Begun.
-            </p>
-
+            Dev.
+ <br />
+            Every day, I take one step closer to building my dream.
+ <br />
+             Turning Curiosity Into Code.
+           </p>
+       </div>
+    </div>
 </section>
 
+<div class="quote">
+    <p>
+     From HTML to Unreal Engine– My Journey Has Just Begun.
+    </p>
+</div>
     </header>
+           <hr>
 
-    <hr />
+ <h3>
+   If you want to check other things, links are in below! 
+ </h3>
 
-    <section>
-      <h3 style="text-align: center">
-        If you want to check other things, links are<br
-          style="text-align: center"
-        />
-        in below!
-      </h3>
-      <main>
+     <main>
+
+//link-1 Education 
         <nav>
-          <a href="education.html" target="_blank">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdpn0eGjHWyvya0lkSjFG1f6_Q6JIw_PV8miygnu6JGsO6oyoWMtgfkLa&s=10"
+          <a href="education.html" target="_blank"> 
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdpn0eGjHWyvya0lkSjFG1f6_Q6JIw_PV8miygnu6JGsO6oyoWMtgfkLa&s=10"   
               height="150px"
               width="250px"
-              alt="Education"
-            />
+              alt="Education"/>            
           </a>
-          <div class="link-title"><strong>Education</strong></div>
+            <div class="link-title">
+              <strong>
+                My Education
+              </strong>
+            </div>
         </nav>
 
+//link-2 Experience       
         <nav>
           <a href="experience.html" target="_blank">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwHw53lAPMkV8fwW3G-M3vW9dZx5VBZtOoQPfhy0HcsslE9inQD4jIezf&s=10"
+            <img             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwHw53lAPMkV8fwW3G-M3vW9dZx5VBZtOoQPfhy0HcsslE9inQD4jIezf&s=10"
               height="150px"
               width="250px"
-              alt="Experience"
-            />
+              alt="Experience"/>            
           </a>
-          <div class="link-title"><strong>Experience</strong></div>
+          <div class="link-title">
+            <strong>
+              My Experience
+            </strong>
+          </div>
         </nav>
 
+//link-3 Projects
         <nav>
           <a href="projects.html" target="_blank">
-            <img
-              src="https://www.cufonfonts.com/images/thumb/6954/project-741x415-6a8b718b78.jpg"
+            <img             src="https://www.cufonfonts.com/images/thumb/6954/project-741x415-6a8b718b78.jpg"
               height="150px"
               width="250px"
-              alt="Projects"
-            />
+              alt="Projects"/>            
           </a>
-          <div class="link-title"><strong>Projects</strong></div>
+            <div class="link-title">
+              <strong>
+                Projects
+              </strong>
+            </div>
         </nav>
 
+//link-4 Login Form
         <nav>
           <a href="login_form.html" target="_blank">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrTxw3Mci2MkB9XQHxrM2bVOhPqMALeTFhapH03sPWxyzg7vplpCRJ8AX&s=10"
+            <img             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrTxw3Mci2MkB9XQHxrM2bVOhPqMALeTFhapH03sPWxyzg7vplpCRJ8AX&s=10"
               height="150px"
               width="250px"
-              alt="Signup Form"
-            />
+              alt="Signup Form"/>            
           </a>
-          <div class="link-title"><strong>Login Form</strong></div>
+          <div class="link-title">
+            <strong>
+              Login Form
+            </strong>
+          </div>
         </nav>
       </main>
+
       <footer>
         <button onclick="alert('My name is Hamza — a question to the world Built from scratch, no favours, no pearls I rose from dust, but my mind touches skies, I face every fall, cause my soul never dies. Quiet in crowds, but I carry a storm, I write my name where chaos is the norm. Empty pockets, but a focused and strategic brain, I’m not a dream — I’m the glitch in the game. No flex, no fake — my grind is my sound, I’m the silence that shakes the whole ground.')">Click Here</button>
- 
      </footer>
-    </section> 
 </body>
 </html>
