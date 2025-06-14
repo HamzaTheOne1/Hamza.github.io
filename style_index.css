@@ -1,1 +1,130 @@
-hamza
+/* Import clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #3d3d5c);
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.outer .inner p {
+  font-size: 1.1rem;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+/* Quote section */
+.quote {
+  margin-top: 20px;
+  font-style: italic;
+  color: #00ffd5;
+}
+
+/* Section heading */
+h3 {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 1.5rem;
+  color: #00ff99;
+}
+
+/* Link grid */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+nav {
+  background-color: #2d2d4d;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.2);
+  transition: transform 0.3s;
+}
+
+nav:hover {
+  transform: scale(1.05);
+}
+
+nav img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.link-title {
+  padding: 10px;
+  text-align: center;
+  background-color: #1f1f30;
+}
+
+.link-title strong {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #00ffc3;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+footer button:hover {
+  background-color: #00c29e;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .outer .inner p {
+    font-size: 1rem;
+  }
+
+  nav {
+    width: 90%;
+  }
+}
