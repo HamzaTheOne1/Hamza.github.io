@@ -1,205 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@400;600&display=swap");
+/* Reset and fonts */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
-}
+{ margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
 
-body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
-  overflow-x: hidden;
-}
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 60px 20px;
-  animation: fadeInSlide 1.5s ease;
-}
+body { font-family: 'Poppins', sans-serif; background: linear-gradient(to right, #0f2027, #203a43, #2c5364); color: #fff; line-height: 1.6; }
 
-header h1 {
-  font-size: 3rem;
-  color: #00ffe7;
-  text-shadow: 0 0 10px #00ffe7, 0 0 30px #00ffe7;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-  animation: neonGlow 2s infinite alternate;
-}
+/* Header */ .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
 
-.outer {
-  display: flex;
-  justify-content: center;
-  animation: slideInUp 1.5s ease;
-}
+nav { position: fixed; top: 0; width: 100%; background: rgba(0, 0, 0, 0.6); display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; z-index: 1000; backdrop-filter: blur(10px); }
 
-.inner {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-  max-width: 700px;
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
+.logo { font-size: 24px; font-weight: 700; color: #00fff0; }
 
-.quote {
-  margin-top: 40px;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.2rem;
-  opacity: 0.8;
-  animation: fadeIn 2s ease;
-}
+nav ul { list-style: none; display: flex; gap: 25px; }
 
-hr {
-  margin: 40px auto;
-  border: 0;
-  width: 60%;
-  height: 2px;
-  background: linear-gradient(to right, #00fff7, #ff00c8);
-}
+nav a { text-decoration: none; color: #fff; font-weight: 500; transition: color 0.3s; }
 
-/* LINKS */
-h3 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-  animation: fadeIn 2s ease;
-}
+nav a:hover { color: #00fff0; }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
-  padding: 0 40px 60px;
-  justify-items: center;
-}
+.hero-content h2 { font-size: 48px; margin-bottom: 10px; }
 
-nav {
-  text-align: center;
-  animation: floatIn 1.5s ease;
-}
+.hero-content span { color: #00fff0; }
 
-nav img {
-  width: 100%;
-  max-width: 250px;
-  height: 150px;
-  border-radius: 15px;
-  transition: transform 0.5s, box-shadow 0.5s;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
-}
+.hero-content p { font-size: 20px; margin-bottom: 20px; }
 
-nav img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
-}
+.btn { padding: 10px 20px; background: #00fff0; color: #000; border: none; border-radius: 30px; cursor: pointer; font-weight: bold; transition: all 0.4s ease; box-shadow: 0 0 10px #00fff0; }
 
-.link-title {
-  margin-top: 10px;
-  font-weight: 600;
-  color: #00fff7;
-  text-shadow: 0 0 5px #00fff7;
-}
+.btn:hover { background: #00cccb; transform: scale(1.05); }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.05);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+/* Section styling */ section { padding: 100px 40px; text-align: center; }
 
-footer button {
-  padding: 12px 30px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #00ffe7, #ff00c8);
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 20px #00ffe7;
-  transition: all 0.3s ease;
-}
+section h2 { font-size: 36px; margin-bottom: 20px; color: #00fff0; }
 
-footer button:hover {
-  background: linear-gradient(135deg, #ff00c8, #00ffe7);
-  transform: scale(1.05);
-}
+.projects .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
 
-/* ANIMATIONS */
-@keyframes fadeInSlide {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+.card { background: rgba(255, 255, 255, 0.05); padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); transition: transform 0.4s, box-shadow 0.4s; backdrop-filter: blur(8px); }
 
-@keyframes slideInUp {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+.card:hover { transform: translateY(-10px); box-shadow: 0 8px 25px rgba(0, 255, 240, 0.3); }
 
-@keyframes neonGlow {
-  from {
-    text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
-  }
-  to {
-    text-shadow: 0 0 20px #ff00c8, 0 0 40px #ff00c8;
-  }
-}
+.card h3 { margin-bottom: 10px; color: #00fff0; }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+.card a { display: inline-block; margin-top: 10px; padding: 8px 16px; background: #00fff0; color: #000; border-radius: 25px; font-weight: bold; text-decoration: none; transition: background 0.3s; }
 
-@keyframes floatIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.95) translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateY(0);
-  }
-}
+.card a:hover { background: #00cccb; }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
+/* Contact Section */ .contact button { padding: 12px 25px; background: transparent; border: 2px solid #00fff0; color: #00fff0; font-size: 16px; border-radius: 30px; cursor: pointer; transition: all 0.4s ease; }
 
-  .inner {
-    padding: 20px;
-    font-size: 1rem;
-  }
+.contact button:hover { background: #00fff0; color: #000; transform: scale(1.05); }
 
-  nav img {
-    height: 130px;
-  }
+/* Footer */ footer { text-align: center; padding: 30px 0; background: #111; font-size: 14px; color: #aaa; }
 
-  footer button {
-    width: 80%;
-  }
-}
